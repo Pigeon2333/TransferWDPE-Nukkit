@@ -1,0 +1,9 @@
+name: TransferWDPE
+version: 1.0.0
+main: de.vazzi.TransferWDPE
+author: Vazzi
+api: ["1.0.0"]
+permissions:
+  wtransfer.command:
+    description: "Allows to transfer yourself or other player to a proxy server"
+    default: op
