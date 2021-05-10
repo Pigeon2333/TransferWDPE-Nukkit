@@ -3,6 +3,8 @@
 
 You can use it in-game per command to transfer player or yourself with the following command:
 
+permission: wtransfer.command
+
 <h4>Transfer Yourself</h4>
 
 /wtransfer ServerName
