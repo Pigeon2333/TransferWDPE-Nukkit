@@ -1,4 +1,4 @@
-package de.vazzi;
+package vazzi;
 
 import cn.nukkit.Player;
 import cn.nukkit.command.Command;
@@ -10,9 +10,9 @@ public class TransferCommand extends Command implements PluginIdentifiableComman
     private Plugin plugin = null;
 
     public TransferCommand(Plugin plugin) {
-        super("wtransfer", "Transfer to another proxy server.");
+        super("wtransfer", "传送到另一个下游服务器.");
         this.setPermission("wtransfer.command");
-        this.setUsage("/wtransfer server | /wtransfer player server");
+        this.setUsage("/wtransfer server");
         this.plugin = plugin;
     }
 
@@ -23,23 +23,13 @@ public class TransferCommand extends Command implements PluginIdentifiableComman
             return true;
         } else if (strings.length < 2) {
             if (commandSender.isPlayer()) {
-                commandSender.sendMessage("§fYou will be transfered to §a" + strings[0]);
-                TransferWDPE.transferPlayer((Player)commandSender, strings[0]);
-                return true;
-            } else {
+                commandSender.sendMessage("§l§a正在将您转发至 §r§f" + strings[0]);
+                TransferWDPE.transferPlayer((Player) commandSender, strings[0]);
                 return true;
             }
-        } else {
-            Player targetplayer = this.getPlugin().getServer().getPlayer(strings[0]);
-            if (targetplayer != null) {
-                String var10001 = targetplayer.getName();
-                commandSender.sendMessage("§fPlayer §a" + var10001 + " §fwill be transfered to §a" + strings[1]);
-                TransferWDPE.transferPlayer(targetplayer, strings[1]);
-                return true;
-            } else {
-                return true;
-            }
+
         }
+        return true;
     }
 
     public Plugin getPlugin() {
