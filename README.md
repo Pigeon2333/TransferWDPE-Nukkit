@@ -13,5 +13,4 @@ permission: wtransfer.command
 1.Change the language to Chinese.  
 
 2.Set the "wtransfer.command" to the default permission that the player has.  
-
 3.Command "wtransfer Player Servername" is removed.  
