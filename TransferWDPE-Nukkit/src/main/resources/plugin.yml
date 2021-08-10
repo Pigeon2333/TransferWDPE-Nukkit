@@ -1,9 +1,9 @@
 name: TransferWDPE
 version: 1.0.0
-main: de.vazzi.TransferWDPE
-author: Vazzi
+main: vazzi.TransferWDPE
+author: 原作者Vazzi,由从不咕咕的鸽纸进行二创及汉化
 api: ["1.0.0"]
 permissions:
   wtransfer.command:
-    description: "Allows to transfer yourself or other player to a proxy server"
-    default: op
+    description: "允许将玩家传送至WaterdogePE的下游服务器"
+    default: true
