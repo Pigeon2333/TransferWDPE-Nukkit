@@ -9,6 +9,6 @@ permission: wtransfer.command
 
 /wtransfer ServerName
 
-<h4>Transfer Other Player</h4>
-
-/wtransfer PlayerName ServerName
+<h4>Change</h4>
+1.Set "wtransfer.comman" as the default permission for the player.
+2.Command "/wtransfer Player Servername" is deleted.
