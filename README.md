@@ -10,6 +10,8 @@ permission: wtransfer.command
 /wtransfer ServerName
 
 <h4>Changes</h4>
-1.Set "wtransfer.comman" as the default permission for the player.  
+1.Change the language to Chinese.  
 
-2.Command "/wtransfer Player Servername" is deleted.
+2.Set the "wtransfer.command" to the default permission that the player has.  
+
+3.Command "wtransfer Player Servername" is removed.  
